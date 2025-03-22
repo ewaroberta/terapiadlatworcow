@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="terapeutka Warszawa, terapia, psychoterapia, psychoterapeutka, Saska Kępa, Praga Południe, Gestalt, terapia humanistyczna">
+    <title>Ewa Zaborowska | Terapia dla Twórców w Warszawie</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #edece8;
+            color: #2c2c2c;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        header {
+            background-color: #6c4f3d;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Zapewnia responsywność */
+            gap: 15px; /* Dystans między linkami */
+            background-color: #6c4f3d;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 15px;
+        }
+
+        section h2 {
+            color: #6c4f3d;
+            border-bottom: 2px solid #6c4f3d;
+            padding-bottom: 8px;
+            font-weight: bold;
+        }
+        .about-image img {
+            max-width: 350px; /* Powiększenie szerokości */
+            height: auto; /* Zachowanie proporcji */
+            border-radius: 25px; /* Zaokrąglone rogi */
+            display: block;
+            margin: 30px auto 0; /* Przesunięcie zdjęcia w dół */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .intro {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #creators {
+            background-color: #e8dfc9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: transparent;
+            color: #6c4f3d;
+            border: 2px solid #6c4f3d;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            display: block;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #6c4f3d;
+            color: white;
+        }
+
+        footer {
+            background-color: #6c4f3d;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .profile-image {
+    width: 100px !important; /* Dokładny rozmiar */
+    height: auto !important; /* Zachowanie proporcji */
+    border-radius: 25px !important; /* Zaokrąglone rogi */
+    display: block !important;
+    margin: 10px auto !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ewa Zaborowska</h1>
+        <p>Psychoterapeutka Gestalt</p>
+    </header>
+    <nav>
+        <a href="#about">O mnie</a>
+        <a href="#gestalt">Gestalt</a>
+        <a href="#creators">Dla Twórców</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <main>
+        <section class="intro" style="color: #6c4f3d; font-size: 1.2em; font-weight: bold; text-align: center; margin-bottom: 5px;">
+            <p>Cześć, skoro tu jesteś, to postaram się przedstawić zwięźle.<br>
+            Wyobrażam sobie, że coś Cię teraz porusza i szukasz wsparcia.<br>
+            Cieszę się, że dajesz sobie tę przestrzeń – to już pierwszy krok w stronę zadbania o siebie!</p>
+        </section>
+        <section id="about">
+            <h2>O mnie</h2>
+            
+            <p>Jestem psychoterapeutką Gestalt w trakcie szkolenia, a także artystką, twórczynią muzyki i tekstów. Od ponad dziesięciu lat prowadzę warsztaty dla dorosłych i dzieci, uczę śpiewu oraz działam jako edukatorka alternatywna. W swojej pracy łączę pasję do sztuki i psychoterapii, obie są przestrzenią poszukiwania, uważności, i otwarcia na niewiadome.<br><br>
+Psychoterapia jest dla mnie sztuką kontaktu, jak opisywał to Serge Ginger, traktując terapeutę jako artystę relacji. W pracy kieruję się intuicją, wrażliwością i ciekawością drugiego człowieka.<br><br>
+Mam zdolność dostrzegania potencjału w ludziach i pomagam odkrywać wewnętrzne zasoby. Towarzyszę w procesie rozwoju z uważnością i troską.<br><br>
+Poza terapią moją pasją jest muzyka, którą tworzę i wykonuję. Uwielbiam zwierzęta i żyję z dwoma kotami. Kocham naukę języków, zwłaszcza włoskiego, a moim wielkim zachwytem jest Sardynia i jej dzika natura. Ruch to dla mnie sposób na bycie w kontakcie ze sobą – joga, rower, spacery nad Wisłą, taniec i nieustanne odkrywanie nowych form aktywności to coś, co daje mi energię i radość.
+</p>
+<div class="about-image">
+
+
+
+
+    <img src="img/2I3A5248-Edytuj.jpg" alt="Zdjęcie terapeuty">
+
+
+
+
+
+
+</div>
+</section>
+</section>
+</section>
+
+        </section>
+        <section id="gestalt">
+            <h2>Gestalt</h2>
+            <p>Gestalt to jeden z głównych nurtów terapii humanistycznej, który zakłada pracę z ciałem i świadomość chwili obecnej. Wartości tego podejścia są mi niezwykle bliskie: dążenie do kontaktu i relacji, bycie w tu i teraz, kreatywność oraz eksperyment – tak naturalne dla mnie poprzez sztukę. Gestalt czerpie z antropologii – dziedziny, którą studiowałam – oraz z filozofii egzystencjalnej. Integracja ciała, emocji i myśli to także istotny element mojej pracy z głosem. Od lat intuicyjnie podążam za jego założeniami, dlatego zgłębianie twórczości gestaltowych autorów jest dla mnie ogromną inspiracją.<br><br>
+To, co szczególnie cenię w Gestalcie, to patrzenie na człowieka przez pryzmat jego zasobów  – w terapii możemy świętować sukcesy, celebrować, doceniać – nie tylko otulać to, co trudne. Budujemy rozumienie i integrujemy nasze doświadczenia z uznaniem dla tego, kim jesteśmy i jak ukształtowało nas życie.<br><br>
+Gestalt nie koncentruje się na przeszłości, nie umniejsza też jej wpływu – istotne jest to, jak doświadczenia przejawiają się tu i teraz, w relacji. W tym podejściu jako terapeutka jestem uczestniczką kontaktu – wnoszę siebie, swoją autentyczność. To dla mnie niezwykle cenne i wartościowe.<br><br>
+Moja własna terapia Gestalt oraz szkolenie w tym nurcie to proces, który pozwala mi się rozwijać, być coraz bardziej w zgodzie ze sobą, z większym luzem, zrozumieniem i akceptacją. To dla mnie bezcenne doświadczenie, którym chcę się dzielić z innymi! 
+</p>
+        </section>
+        <section id="creators">
+            <h2>Dla Twórców</h2>
+            <p>Jako terapeutka z ogromną czułością dedykuję swoją pracę artystom, twórcom i osobom z branży kreatywnej. Rozumiem wyzwania, z którymi mierzy się nasza branża – intensywne emocje, presję, niepewność oraz potrzebę autentyczności w świecie pełnym oczekiwań.<br><br>
+Wspieram również twórców w ramach projektu ZAiKS Mentoring - Inkubator, gdzie prowadzę grupę rozwojową oraz pełnię funkcję koordynatorki organizacyjnej, jestem jedną z pomysłodawczyń inicjatywy.<br><br>
+Jeśli czujesz, że potrzebujesz przestrzeni na refleksję, uporządkowanie emocji, wzmocnienie swojej kreatywności lub lepszego rozumienia siebie w kontekście twórczym – zapraszam do wspólnej pracy. Możemy spotkać się na sesjach indywidualnych lub w procesie grupowym, czy na warsztatach. Nasza praca może być intensywna, głęboka i jednocześnie pełna lekkości i humoru – bo wierzę, że kontakt ze sobą to szansa na twórcze odkrycia.
+</p>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Ewa Zaborowska<br>tel. 536 818 868<br>Email: ewarobertazaborowska@gmail.com</p>
+          
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Ewa Zaborowska | Terapia dla Twórców | All rights reserved.</p>
+    </footer>
+</body>
+</html>
