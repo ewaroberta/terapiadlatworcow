@@ -4,56 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="terapeutka Warszawa, terapia, psychoterapia, psychoterapeutka, Saska Kępa, Praga Południe, Gestalt, terapia humanistyczna">
-    <title>Ewa Zaborowska | Terapia dla Twórców w Warszawie</title>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
         * {
-            box-sizing: border-box;
+            box-sizing: border-box;  margin: 0;
+            padding: 0;
         }
 
         body {
-            font-family: 'Lato', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #edece8;
-            color: #2c2c2c;
-            line-height: 1.8;
-            text-align: justify;
-        }
+    font-family: 'Times New Roman', serif; font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4EC; /* Kremowe tło strony */
+    color: black; /* Czarny kolor tekstu */
+    line-height: 1.8;
+    text-align: justify;
 
-        header {
-            background-color: #6c4f3d;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1, header h2
+    font-family: 'Times New Roman'; serif; /* Czcionka Times New Roman */
+    margin: 0;
+    color: white;
+    font-weight: normal;
+}
 
         nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap; /* Zapewnia responsywność */
-            gap: 15px; /* Dystans między linkami */
-            background-color: #6c4f3d;
-            padding: 15px;
-        }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Zapewnia responsywność */
+    gap: 15px; /* Dystans między linkami */
+    background-color: #F8F4EC; /* Kremowe tło menu */
+    padding: 15px;
+    font-family: 'Times New Roman', serif; /* Czcionka Times New Roman */
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
+nav a {
+    color: #333333; /* Ciemniejszy kolor tekstu */
+    text-decoration: none;
+    font-style: italic; /* Kursywa */
+    margin: 0 20px;
+    font-size: 1.1em;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover {
+    text-decoration: underline;
+    color: black; /* Kolor zmienia się na czarny po najechaniu */
+}
+
 
         main {
             padding: 20px;
@@ -67,19 +74,79 @@
         }
 
         section h2 {
-            color: #6c4f3d;
-            border-bottom: 2px solid #6c4f3d;
+            color: #black;
+            border-bottom: 2px #black;
             padding-bottom: 8px;
             font-weight: bold;
+            
         }
         .about-image img {
             max-width: 350px; /* Powiększenie szerokości */
             height: auto; /* Zachowanie proporcji */
-            border-radius: 25px; /* Zaokrąglone rogi */
+            border-radius: none
             display: block;
             margin: 30px auto 0; /* Przesunięcie zdjęcia w dół */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: none
+           
+            section {
+    margin-bottom: 40px;
+    padding: 15px;
+
+
+section h2 {
+    color: black;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 12px;
+    margin-top: 30px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* Początkowy styl nagłówka */
+#about h2 {
+    position: relative;
+    background-color: #F8F4EC;
+    padding: 15px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    opacity: 1; /* Nagłówek widoczny od samego początku */
+    transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out; /* Dodanie płynności */
+}
+
+/* Sticky nagłówek po przewinięciu */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1; /* Nagłówek nie zmienia się po przewinięciu */
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+<script>
+    // Wybieramy nagłówek "jestem"
+    const aboutHeader = document.querySelector('#about h2');
+    
+    // Funkcja, która będzie sprawdzać, czy strona jest przewinięta
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY; // Sprawdza pozycję przewinięcia
+        
+        // Gdy przewiniemy stronę o co najmniej 100px
+        if (scrollPosition > 100) {
+            aboutHeader.style.opacity = 1; // Pokazuje nagłówek
+        } else {
+            aboutHeader.style.opacity = 0; // Ukrywa nagłówek, gdy na górze
         }
+    });
+</script>
+
 
 
         .intro {
@@ -121,14 +188,15 @@
             width: 100%;
         }
 
-        .contact-form button:hover {
+    
+       .contact-form button:hover {
             background-color: #6c4f3d;
             color: white;
         }
 
         footer {
-            background-color: #6c4f3d;
-            color: white;
+            background-color: #eb6a47;
+            color: black;
             text-align: center;
             padding: 15px 0;
             position: relative;
@@ -136,6 +204,37 @@
             left: 0;
             width: 100%;
         }
+        #about h2, #gestalt h2, #contact h2 {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 300; /* Lżejsza czcionka */
+    font-size: 1.5em; /* Mniejsze niż w menu */
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+#creators {
+    padding: 50px 20px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-align: left; /* Wyrównanie całej sekcji do lewej */
+}
+
+#creators h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center; /* Wyśrodkowanie nagłówka */
+}
+
+#creators p {
+    text-align: left; /* Wyrównanie tekstu w paragrafie do lewej */
+}
+
+
+
+
 
         .profile-image {
     width: 100px !important; /* Dokładny rozmiar */
@@ -145,40 +244,75 @@
     margin: 10px auto !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
+#about img {
+    display: block;
+    margin: 0 auto; /* Wyśrodkowanie zdjęcia */
+    max-width: 40%; /* Zapewnia, że zdjęcie nie wyjdzie poza kontener */
+    height: auto; /* Zachowanie proporcji zdjęcia */
+}
+
 
     </style>
-</head>
-<body>
-    <header>
-        <h1>Ewa Zaborowska</h1>
-        <p>Psychoterapeutka Gestalt</p>
+<header style="text-align: center; display: flex; justify-content: center; align-items: center; color: white; height: 300px; position: relative; background-color: transparent;">
+    <img src="D:\Ewa\www\img\pomarańcz.png" alt="Tło dla twórców" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
+    <div style="z-index: 1;">
+        <h1 style="font-family: 'Times New Roman', serif; font-size: 2.5em; margin: 0; color: white; font-weight: normal;">Terapia</h1>
+        <h2 style="font-family: 'Times New Roman', serif; font-size: 1.8em; margin: 0; font-style: italic; color: white; font-weight: normal; margin-top: -10px; z-index: -1;
+        margin: 0;
+        padding: 0;">dla twórców</h2>
+    </div>
+</header>
+
+    
+    
+    
+    
+    
+    
+    
     </header>
     <nav>
-        <a href="#about">O mnie</a>
-        <a href="#gestalt">Gestalt</a>
-        <a href="#creators">Dla Twórców</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#about">o mnie</a>
+        <a href="#gestalt">gestalt</a>
+        <a href="#creators">dla twórców</a>
+        <a href="#contact">kontakt</a>
     </nav>
     <main>
-        <section class="intro" style="color: #6c4f3d; font-size: 1.2em; font-weight: bold; text-align: center; margin-bottom: 5px;">
-            <p>Cześć, skoro tu jesteś, to postaram się przedstawić zwięźle.<br>
-            Wyobrażam sobie, że coś Cię teraz porusza i szukasz wsparcia.<br>
-            Cieszę się, że dajesz sobie tę przestrzeń – to już pierwszy krok w stronę zadbania o siebie!</p>
-        </section>
+        <section class="intro" style="color:black; font-size: 1.2em; font-style: italic; font-weight: normal; text-align: center; margin-bottom: 5px;">
+            <p>Cześć, jestem Ewa. Skoro jesteś tutaj, to możliwe, że coś Cię teraz porusza i szukasz wsparcia – to już pierwszy krok w stronę zadbania o siebie!</p>
+            <div class="about-image">
+
+
+
+
+                <img src="img/logowe.png" alt="zdjęcie terapeuty">
+             
+             
+             
+             
+             
+             
+             
+             
+             </div>
+        </section>    
         <section id="about">
-            <h2>O mnie</h2>
+            <h2>o mnie</h2>
             
-            <p>Jestem psychoterapeutką Gestalt w trakcie szkolenia, a także artystką, twórczynią muzyki i tekstów. Od ponad dziesięciu lat prowadzę warsztaty dla dorosłych i dzieci, uczę śpiewu oraz działam jako edukatorka alternatywna. W swojej pracy łączę pasję do sztuki i psychoterapii, obie są przestrzenią poszukiwania, uważności, i otwarcia na niewiadome.<br><br>
+            <p>Nazywam się Ewa Zaborowska, jestem psychoterapeutką Gestalt w trakcie szkolenia, a także artystką, twórczynią muzyki i tekstów. Od ponad dziesięciu lat prowadzę warsztaty dla dorosłych i dzieci, uczę śpiewu oraz działam jako edukatorka alternatywna. W swojej pracy łączę pasję do sztuki i psychoterapii, obie są przestrzenią poszukiwania, uważności, i otwarcia na niewiadome.<br><br>
 Psychoterapia jest dla mnie sztuką kontaktu, jak opisywał to Serge Ginger, traktując terapeutę jako artystę relacji. W pracy kieruję się intuicją, wrażliwością i ciekawością drugiego człowieka.<br><br>
 Mam zdolność dostrzegania potencjału w ludziach i pomagam odkrywać wewnętrzne zasoby. Towarzyszę w procesie rozwoju z uważnością i troską.<br><br>
-Poza terapią moją pasją jest muzyka, którą tworzę i wykonuję. Uwielbiam zwierzęta i żyję z dwoma kotami. Kocham naukę języków, zwłaszcza włoskiego, a moim wielkim zachwytem jest Sardynia i jej dzika natura. Ruch to dla mnie sposób na bycie w kontakcie ze sobą – joga, rower, spacery nad Wisłą, taniec i nieustanne odkrywanie nowych form aktywności to coś, co daje mi energię i radość.
+Moją pasją jest muzyka, którą tworzę i wykonuję. Bardzo lubię zwierzęta i żyję z dwoma kotami. Uczę się włoskiego, a moim wielkim zachwytem jest Sardynia i jej dzika natura. Ruch to dla mnie sposób na bycie w kontakcie ze sobą – joga, rower, spacery nad Wisłą, to coś, co daje mi energię i radość.
 </p>
+<br><br>
 <div class="about-image">
 
 
 
 
-   <img src="./2I3A5248-Edytuj.jpg" alt="zdjęcie terapeuty">
+   <img src="img/2.png" alt="zdjęcie terapeuty">
+ 
+
 
 
 
@@ -202,17 +336,19 @@ Moja własna terapia Gestalt oraz szkolenie w tym nurcie to proces, który pozwa
 </p>
         </section>
         <section id="creators">
-            <h2>Dla Twórców</h2>
+            <h2>dla twórców</h2>
             <p>Jako terapeutka z ogromną czułością dedykuję swoją pracę artystom, twórcom i osobom z branży kreatywnej. Rozumiem wyzwania, z którymi mierzy się nasza branża – intensywne emocje, presję, niepewność oraz potrzebę autentyczności w świecie pełnym oczekiwań.<br><br>
 Wspieram również twórców w ramach projektu ZAiKS Mentoring - Inkubator, gdzie prowadzę grupę rozwojową oraz pełnię funkcję koordynatorki organizacyjnej, jestem jedną z pomysłodawczyń inicjatywy.<br><br>
 Jeśli czujesz, że potrzebujesz przestrzeni na refleksję, uporządkowanie emocji, wzmocnienie swojej kreatywności lub lepszego rozumienia siebie w kontekście twórczym – zapraszam do wspólnej pracy. Możemy spotkać się na sesjach indywidualnych lub w procesie grupowym, czy na warsztatach. Nasza praca może być intensywna, głęboka i jednocześnie pełna lekkości i humoru – bo wierzę, że kontakt ze sobą to szansa na twórcze odkrycia.
 </p>
         </section>
         <section id="contact">
-            <h2>Kontakt</h2>
-            <p>Ewa Zaborowska<br>tel. 536 818 868<br>Email: ewarobertazaborowska@gmail.com</p>
-          
-            </div>
+            <h2>kontakt</h2>
+            <p>Ewa Zaborowska<br>tel. 536 818 868<br>Email: ewarobertazaborowska@gmail.com</p>gabinet: ul. Czeska 11/2, Saska Kępa, Warszawa
+          <br>
+          <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.433645744787!2d21.046861276934095!3d52.235506657253225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecdab66f7bda1%3A0x4e333f0ed3206058!2sCzeska%2011%2F2%2C%2003-902%20Warszawa!5e0!3m2!1spl!2spl!4v1742990716536!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        </div>
         </section>
     </main>
     <footer>
