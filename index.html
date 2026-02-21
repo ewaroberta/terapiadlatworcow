@@ -343,14 +343,12 @@ Moją pasją ostatnio jest życie – jakkolwiek banalnie to brzmi. Po prostu by
 
 
 <div class="about-image">
-    <img src="https://raw.githubusercontent.com/ewaroberta/terapiadlatworcow/main/mazy.png" alt="Mały obrazek" class="mazy-img">
+    <img src="https://raw.githubusercontent.com/ewaroberta/terapiadlatworcow/main/mazy.png" alt="Mały obrazek" id="mazy-img">
 </div>
 
 <style>
-/* Desktop i tablet */
-.about-image .mazy-img {
-    width: 400px; 
-    max-width: 100%;
+#mazy-img {
+    width: 400px;  /* desktop i tablet */
     height: auto;
     display: block;
     margin: 20px auto;
@@ -358,10 +356,10 @@ Moją pasją ostatnio jest życie – jakkolwiek banalnie to brzmi. Po prostu by
 
 /* Telefony – ekran < 768px */
 @media (max-width: 768px) {
-    .about-image .mazy-img {
-        width: 95vw;   /* 95% szerokości okna przeglądarki */
-        max-width: none;
-        height: auto;
+    #mazy-img {
+        width: 95vw !important;   /* wymusza szerokość prawie całego ekranu telefonu */
+        height: auto !important;
+        margin: 10px auto !important;
     }
 }
 </style>
