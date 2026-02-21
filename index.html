@@ -342,13 +342,22 @@ Moją pasją ostatnio jest życie – jakkolwiek banalnie to brzmi. Po prostu by
 
 
 
- <div class="about-image">
-    <img src="https://raw.githubusercontent.com/ewaroberta/terapiadlatworcow/main/mazy.png" alt="Mały obrazek">
+<!-- Sekcja z obrazkiem -->
+<div class="about-image">
+    <img src="https://raw.githubusercontent.com/ewaroberta/terapiadlatworcow/main/mazy.png" 
+         alt="Mały obrazek">
 </div>
- 
 
-
-
+<style>
+/* Responsywne obrazki w sekcji about-image */
+.about-image img {
+    width: 80%;        /* Obrazek zajmuje 80% szerokości kontenera na małych ekranach */
+    max-width: 350px;  /* Maksymalna szerokość na komputerze */
+    height: auto;      /* Zachowanie proporcji */
+    display: block;
+    margin: 30px auto; /* Przerwa nad i pod obrazkiem + wyśrodkowanie */
+}
+</style>
 
 
 
