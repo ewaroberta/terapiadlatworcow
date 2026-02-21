@@ -347,22 +347,22 @@ Moją pasją ostatnio jest życie – jakkolwiek banalnie to brzmi. Po prostu by
 </div>
 
 <style>
-/* Styl bazowy dla desktop i tablet */
 .mazy-img {
-    width: 400px; /* standardowa szerokość */
-    height: auto; /* zachowuje proporcje */
+    width: 400px; /* desktop i tablet */
+    height: auto;
     display: block;
-    margin: 20px auto; /* wyśrodkowanie i przestrzeń nad/pod zdjęciem */
+    margin: 20px auto;
 }
 
-/* Styl dla telefonów – bardzo małe ekrany */
+/* Telefony – zdjęcie dużo większe, zajmuje prawie cały ekran */
 @media (max-width: 768px) {
     .mazy-img {
-        width: 80%; /* zajmuje większość szerokości ekranu telefonu */
-        max-width: 400px; /* nie wychodzi poza desktopowy rozmiar */
+        width: 95%; /* prawie pełna szerokość ekranu telefonu */
+        max-width: none; /* usuwa ograniczenie desktopowe */
         height: auto;
     }
 }
+</style>
 
 
 
