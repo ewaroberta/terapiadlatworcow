@@ -348,16 +348,16 @@ Moją pasją ostatnio jest życie – jakkolwiek banalnie to brzmi. Po prostu by
 
 <style>
 .mazy-img {
-    width: 100px; /* domyślny rozmiar dla desktopu */
+    width: 400px; /* bazowy rozmiar dla desktop i tablet */
     height: auto;
     display: block;
     margin: 20px auto;
 }
 
-/* Powiększenie 4x na telefonach (max-width 600px) */
-@media (max-width: 600px) {
+/* Opcjonalnie powiększenie na bardzo małe ekrany */
+@media (max-width: 400px) {
     .mazy-img {
-        width: 400px; /* 4x większe niż domyślnie */
+        width: 100%; /* zdjęcie zajmuje całą szerokość ekranu telefonu */
     }
 }
 </style>
