@@ -342,23 +342,25 @@ Moją pasją ostatnio jest życie – jakkolwiek banalnie to brzmi. Po prostu by
 
 
 
-<!-- Sekcja z obrazkiem -->
 <div class="about-image">
-    <img src="https://raw.githubusercontent.com/ewaroberta/terapiadlatworcow/main/mazy.png" 
-         alt="Mały obrazek">
+    <img src="https://raw.githubusercontent.com/ewaroberta/terapiadlatworcow/main/mazy.png" alt="Mały obrazek" class="mazy-img">
 </div>
 
 <style>
-/* Responsywne obrazki w sekcji about-image */
-.about-image img {
-    width: 80%;        /* Obrazek zajmuje 80% szerokości kontenera na małych ekranach */
-    max-width: 350px;  /* Maksymalna szerokość na komputerze */
-    height: auto;      /* Zachowanie proporcji */
+.mazy-img {
+    width: 100px; /* domyślny rozmiar dla desktopu */
+    height: auto;
     display: block;
-    margin: 30px auto; /* Przerwa nad i pod obrazkiem + wyśrodkowanie */
+    margin: 20px auto;
+}
+
+/* Powiększenie 4x na telefonach (max-width 600px) */
+@media (max-width: 600px) {
+    .mazy-img {
+        width: 400px; /* 4x większe niż domyślnie */
+    }
 }
 </style>
-
 
 
 
@@ -446,7 +448,7 @@ PS. Tę stronę stworzyłam sama, w ramach eksperymentu. Jest niedoskonała – 
 <div class="contact-block">
     <p><strong>Instagram</strong></p>
     <p class="contact-note">
-        Zapraszam też do obserwowania mojego Instagrama, gdzie dzielę się bieżącymi informacjami o projektach, warsztatach i codziennych refleksjach związanych z twórczością i terapią:
+        Zapraszam też do obserwowania mojego Instagrama @terapia_dla_tworcow, gdzie dzielę się bieżącymi informacjami o projektach, warsztatach i codziennych refleksjach związanych z twórczością i terapią:
     </p>
     </div>
 
