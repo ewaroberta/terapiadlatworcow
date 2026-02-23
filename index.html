@@ -343,10 +343,26 @@ Moją pasją ostatnio jest życie – jakkolwiek banalnie to brzmi. Po prostu by
 
 
 <div class="about-image">
-    <img src="https://raw.githubusercontent.com/ewaroberta/terapiadlatworcow/main/mazy.png" 
-         alt="Mały obrazek" 
-         style="width:95vw; max-width:1200px; height:auto; display:block; margin:20px auto;">
+    <img 
+        src="https://raw.githubusercontent.com/ewaroberta/terapiadlatworcow/main/mazy.png" 
+        alt="Mały obrazek"
+        style="
+            width:400px;
+            max-width:100%;
+            height:auto;
+            display:block;
+            margin:20px auto;
+        "
+    >
 </div>
+
+<style>
+@media (max-width: 768px) {
+    .about-image img {
+        width: 95% !important;
+    }
+}
+</style>
 
 
 
