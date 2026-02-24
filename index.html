@@ -139,24 +139,6 @@ section h2 {
     opacity: 1; /* Nagłówek nie zmienia się po przewinięciu */
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-<script>
-    // Wybieramy nagłówek "jestem"
-    const aboutHeader = document.querySelector('#about h2');
-    
-    // Funkcja, która będzie sprawdzać, czy strona jest przewinięta
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.scrollY; // Sprawdza pozycję przewinięcia
-        
-        // Gdy przewiniemy stronę o co najmniej 100px
-        if (scrollPosition > 100) {
-            aboutHeader.style.opacity = 1; // Pokazuje nagłówek
-        } else {
-            aboutHeader.style.opacity = 0; // Ukrywa nagłówek, gdy na górze
-        }
-    });
-</script>
 
         }
 
@@ -176,6 +158,8 @@ section h2 {
 
 #offer {
     margin-top: 60px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .offer-item {
@@ -201,7 +185,7 @@ section h2 {
         .contact-form input, .contact-form textarea {
             width: 100%;
             padding: 12px;
-            margin-bottom: 5px;
+            margin-bottom: 0px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
@@ -421,7 +405,7 @@ Wspieram twórców w ramach projektu ZAiKS Mentoring – Inkubator, gdzie prowad
 Jeśli czujesz, że potrzebujesz przestrzeni na refleksję, uporządkowanie emocji, wzmocnienie swojej kreatywności lub lepsze rozumienie siebie w procesie twórczym, zapraszam do wspólnej pracy. Możemy spotkać się na sesjach indywidualnych, w procesie grupowym lub na warsztatach. To może być przestrzeń do zatrzymania się, odzyskiwania kontaktu ze sobą i odkrywania nowych możliwości.
  </div>
 <p style="margin-top: 30px;">
-Tę stronę napisałam sama – trochę z przekory, trochę z ciekawości, bo twórczość może mieć różne formy.
+PS. Tę stronę napisałam sama – trochę z przekory, trochę z ciekawości, bo twórczość może mieć różne formy.
 </p>
 <section id="offer">
     <h2>oferta</h2>
@@ -484,5 +468,18 @@ Tę stronę napisałam sama – trochę z przekory, trochę z ciekawości, bo tw
     <footer>
         <p>© 2025 Roberta Zaborowska | Terapia dla Twórców | All rights reserved.</p>
     </footer>
+    <script>
+    const aboutHeader = document.querySelector('#about h2');
+
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 100) {
+            aboutHeader.style.opacity = 1;
+        } else {
+            aboutHeader.style.opacity = 0;
+        }
+    });
+</script>
 </body>
 </html>
